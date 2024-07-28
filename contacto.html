@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Online del Gamer - Página de Contacto</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Tienda Online del Gamer</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="consolas.html">Consolas </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="videojuegos.html">Videojuegos </a>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto <span class="sr-only">(actual)</span></a>  
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div id="homediv">
+        <div id="títulos">
+            <h1>Formulario de Contacto</h1>
+        </div>
+    </div>
+    <section class="form-section">
+        <form id="contact-form" action="#" method="POST">
+            <label for="nombre">Nombre y Apellido:</label>
+            <input type="text" id="nombre" placeholder="Acá tu nombre" name="nombre" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Tu email válido" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br><br>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" placeholder="Escribe tu dirección física" name="direccion" required><br><br>
+
+            <label for="telefono">Teléfono Celular:</label>
+            <input type="tel" id="telefono" placeholder="Escribe el código de área y número de celular (sin 0 ni 15)" name="telefono" required pattern="[0-9]{10,13}"><br><br>
+
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>       
+
+            <div class="checkbox-container">
+                <input type="checkbox" name="checkbox" id="checkbox" required>
+                <label for="checkbox" class="checkbox-label">Acepto los términos y condiciones de Rincon Botanico</label>
+            </div>
+            <br><br>
+            
+            <input type="submit" value="Enviar">            
+
+        </form>
+    </section>
+    
+    <section class="locations">
+        <!-- Contenido de las locaciones -->
+        <section class="locations">
+            <div class="location">
+                <p><b>CASA CENTRAL - SANTA FE</b></p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13585.230338654867!2d-60.69511283939209!3d-31.652803609440245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9a16553bbb7%3A0xe6de2930453988c1!2sRibera%20Shopping!5e0!3m2!1ses!2sar!4v1722191105419!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="location">
+                <p><b>SUCURSAL - SANTIAGO DEL ESTERO</b></p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56480.762216787894!2d-64.33340549468996!3d-27.77750627650276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943b523dac7bd8eb%3A0xcff8e5d9a2296d6d!2sPortal%20Santiago%20Shopping!5e0!3m2!1ses!2sar!4v1722191232164!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="location">
+                <p><b>SUCURSAL - CORDOBA</b></p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54480.67640503108!2d-64.2771772377608!3d-31.412961305443684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298830933ad09%3A0xb72fd713f4c77c4e!2sNuevocentro%20Shopping!5e0!3m2!1ses!2sar!4v1722191283836!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </section>
+</main>
+
+<footer class="footer">
+    <div id="mapa">
+        <a href="#mapadesitio">Mapa de sitio</a>
+        <div name="mapadesitio" id="mapadesitio"> 
+        </div>
+    </div>
+    <div id="redes"> 
+        <i class="fa-brands fa-linkedin" title="linkedIn"></i>
+        <i class="fa-brands fa-square-instagram" title="instagram"></i>
+        <i class="fa-brands fa-facebook" title="facebook"></i>
+    </div>
+</footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
