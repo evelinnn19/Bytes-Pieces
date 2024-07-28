@@ -7,6 +7,12 @@
 body {
     padding-top: 56px; /* Espacio para el navbar fijo */
   }
+
+.logo img {
+    width: 100px;
+    text-decoration: none;
+    color: #fff;
+}
   
   .carousel-inner img {
     width: 100%;
