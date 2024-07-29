@@ -4,9 +4,7 @@
 }
 
 
-body {
-    padding-top: 56px; /* Espacio para el navbar fijo */
-  }
+
 
 .logo img {
     width: 100px;
@@ -33,18 +31,19 @@ body {
 	font-size: 15px;
 	text-transform: uppercase;
 	font-weight: 700;
-    color: #FFF1DB;
+    color: #e6e6ff;
 }
 
 .navbar-brand {
     font-size: 22px;
 	text-transform: uppercase;
 	font-weight: 800;
-    color:  #FFF1DB;
+    color:  #e6e6ff;
 }
+
 .navbar {
     margin-bottom: 40px;
-    background-color: #E88D67;
+    background-color: #2365ff;
     position: relative;
 }
 
