@@ -4,7 +4,11 @@
 }
 
 
-
+html, body {
+  height: 100%;
+  margin: 0;
+  background: #fff;
+}
 
 .logo img {
     width: 100px;
@@ -12,43 +16,73 @@
     color: #fff;
 }
   
-  .carousel-inner img {
-    width: 100%;
-    height: 100%;
-  }
+.carousel-container {
+  max-width: 600px; 
+  margin: 20px auto; 
+
+}
+.carousel-inner img {
+  width: 100%;
+  height: 400px; 
+  object-fit: cover; 
+}
+
+.carousel-title{
+  text-align: center;
+  margin-top: 20px;
+}
   
-  .card {
-    margin-bottom: 20px;
-  }
-  
-  .card-img-top {
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  
-.navbar-nav a {
-	font-size: 15px;
+
+
+ 
+.navbar a{
+  font-size: 15px;
 	text-transform: uppercase;
 	font-weight: 700;
-    color: #e6e6ff;
 }
 
-.navbar-brand {
-    font-size: 22px;
-	text-transform: uppercase;
-	font-weight: 800;
-    color:  #e6e6ff;
-}
+
 
 .navbar {
-    margin-bottom: 40px;
-    background-color: #2365ff;
-    position: relative;
+  margin-bottom: 40px;
+  background-color: #b8deff;
+  position: relative;
 }
 
 .navbar-toggler {
     position: absolute;
     top: 0;
     right: 0;
+
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el contenedor ocupe al menos el 100% de la altura de la ventana */
+}
+
+.footer {
+  background-color: #f7f7f7; 
+  padding: 10px; 
+  text-align: center;
+  border-top: 1px solid #cfcfcf;
+}
+
+.content {
+  flex: 1;
+}
+
+
+h5{
+  color: rgb(17, 0, 255);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: end;
+}
+
+h2{
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(17, 0, 255);
 }
