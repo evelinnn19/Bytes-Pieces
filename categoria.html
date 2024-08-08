@@ -3,72 +3,214 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tienda Online del Gamer - Página Consolas</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Tienda online de consolas y videojuegos retro. Encuentra las mejores ofertas y productos destacados.">
+  <title>BIENVENIDO A BYTES & PIECES - TIENDA ONLINE DEL GAMER - Página Categorias</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script src="scripts.js"></script>
+  <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+  <script src="scripts.js" defer></script>
 </head>
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Tienda Online del Gamer</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="consolas.html">Consolas <span class="sr-only">(actual)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="videojuegos.html">Videojuegos</a>
-          <li class="nav-item">
-            <a class="nav-link" href="contacto.html">Contacto </a>
-          </li>
-        </ul>
+
+
+<body class="bg-gray-800 text-white">
+    <div class="wrapper">
+        <!-- Header -->
+        <header>
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="img/logo.jpg" alt="Logo" class="logo">
+                Bytes & Pieces
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="consolas.html">Consolas</a>
+                      <a class="dropdown-item" href="videojuegos.html">Videojuegos</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                <!-- Cart icon -->
+                <span class="relative text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        #
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z"/>
+                  <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+                </svg>
+            <small id="cart-count" class="bg-red-500 text-xs text-white w-4 h-4 absolute -top-2 -right-2 rounded-full">0</small>
+          </span>
+                </ul>
+              </div>
+            </div> 
+          </nav>
+          
+  <nav class="bg-gray-900 p-4 mb-6">
+    <div
+      class="container max-w-6xl mx-auto flex flex-col sm:flex-row gap-8 items-center"
+    >
+      <!-- Search area -->
+      <div class="relative w-full">
+        <input
+          type="text"
+          id="search"
+          class="bg-gray-700 rounded-full p-2 pl-10 transition focus:w-full"
+          placeholder="Buscar productos..."
+        />
+        <svg
+          class="absolute left-2 top-1/2 -translate-y-1/2"
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+          <path d="M21 21l-6 -6" />
+        </svg>
       </div>
-    </nav>
-  </header>
-  <main class="container mt-4">
-    <h1>Consolas</h1>
+    </div>
+  </nav>
+
+  <main class="flex flex-col md:flex-row container mx-auto max-w-6xl">
+    <div class="space-y-4 p-2 w-full md:max-w-[10rem]">
+      <h2 class="text-2xl">Filtro</h2>
+      <h3 class="text-xl mb-2">Categoria</h3>
+      <div id="filters-container" class="text-xl space-y-2">
+        <div>
+          <input type="checkbox" class="check" id="consolas" />
+          <label for="consolas">Consolas</label>
+        </div>
+        <div>
+          <input type="checkbox" class="check" id="videojuegos" />
+          <label for="videojuegos">Videojuegos</label>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="products-wrapper"
+      class="w-full max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-6 place-content-center p-4"></div>
+        <h1>Consolas</h1>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/atari.jpg" class="card-img-top" alt="Atari">
+              <div class="card-body">
+                <h5 class="card-title">Atari 2600</h5>
+                <p class="card-text">$100.000,00</p>
+                <a href="producto_atari.html" class="btn btn-primary">Ver Detalles</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/nintendo.jpg" class="card-img-top" alt="Nintendo">
+              <div class="card-body">
+                <h5 class="card-title">Nintendo NES</h5>
+                <p class="card-text">$150.000,00</p>
+                <a href="producto_nintendo.html" class="btn btn-primary">Ver Detalles</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/gameboy.jpg" class="card-img-top" alt="Gameboy">
+              <div class="card-body">
+                <h5 class="card-title">Gameboy</h5>
+                <p class="card-text">$250.000,00</p>
+                <a href="producto_gameboy.html" class="btn btn-primary">Ver Detalles</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h1>Videojuegos</h1>
     <div class="row">
       <div class="col-md-4">
         <div class="card">
-          <img src="img/atari.jpg" class="card-img-top" alt="Atari">
+          <img src="img/pacman.jpg" class="card-img-top" alt="Atari-Pacman">
           <div class="card-body">
-            <h5 class="card-title">Atari 2600</h5>
-            <p class="card-text">$100.000,00</p>
+            <h5 class="card-title">Videojuego Pacman - Atari 2600</h5>
+            <p class="card-text">$35.000,00</p>
             <a href="producto_atari.html" class="btn btn-primary">Ver Detalles</a>
           </div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card">
-          <img src="img/nintendo.jpg" class="card-img-top" alt="Nintendo">
+          <img src="img/supermario1.jpg" class="card-img-top" alt="Nintendo-SuperMario1">
           <div class="card-body">
-            <h5 class="card-title">Nintendo NES</h5>
-            <p class="card-text">$150.000,00</p>
+            <h5 class="card-title">Videojuego SuperMario 1 y otros - Nintendo NES</h5>
+            <p class="card-text">$50.000,00</p>
             <a href="producto_nintendo.html" class="btn btn-primary">Ver Detalles</a>
           </div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card">
-          <img src="img/gameboy.jpg" class="card-img-top" alt="Gameboy">
+          <img src="img/tetris.jpg" class="card-img-top" alt="Gameboy - Tetris">
           <div class="card-body">
-            <h5 class="card-title">Gameboy</h5>
-            <p class="card-text">$250.000,00</p>
+            <h5 class="card-title">Videojuego Tetris - Gameboy</h5>
+            <p class="card-text">$40.000,00</p>
             <a href="producto_gameboy.html" class="btn btn-primary">Ver Detalles</a>
           </div>
         </div>
       </div>
     </div>
   </main>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 newsletter">
+        <h2>Suscríbete a nuestro Newsletter</h2>
+        <form action="#" method="post">
+          <input type="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+          <button type="submit">Suscribirse</button>
+        </form>
+      </div>
+      <div class="col-md-6 social-media">
+        <h2>Nuestras redes</h2>
+        <ul>
+          <li><a href="https://www.facebook.com/bytesandpieces" target="_blank"><i class="bi bi-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/bytesandpieces/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+          <li><a href="https://twitter.com/Bytesandpieces" target="_blank"><i class="bi bi-twitter"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>    
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,129 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
-    font-family: 'Poppins';
-}
-
-
-html, body {
-  height: 100%;
+/* Estilos Generales */
+body {
+  font-family: 'Press Start 2P', cursive;
   margin: 0;
-  background: #fff;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
 }
-
-.logo img {
-    width: 100px;
-    text-decoration: none;
-    color: #fff;
-}
-  
-.carousel-container {
-  max-width: 600px; 
-  margin: 20px auto; 
-
-}
-.carousel-inner img {
-  width: 100%;
-  height: 400px; 
-  object-fit: cover; 
-}
-
-.carousel-title{
-  text-align: center;
-  margin-top: 20px;
-}
-  
-
-
- 
-.navbar a{
-  font-size: 15px;
-	text-transform: uppercase;
-	font-weight: 700;
-}
-
-
 
 .navbar {
-  margin-bottom: 40px;
-  background-color: #b8deff;
-  position: relative;
+  background-color: #ffcc00;
 }
 
-.navbar-toggler {
-    position: absolute;
-    top: 0;
-    right: 0;
-
-}
-
-.wrapper {
+.navbar-brand {
   display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* Asegura que el contenedor ocupe al menos el 100% de la altura de la ventana */
+  align-items: center;
 }
 
+.navbar-brand .logo {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.navbar-brand, .nav-link {
+  color: #000 !important;
+}
+
+.nav-link:hover {
+  color: #000 !important;
+}
+
+/* Estilos para el carrusel */
+.carousel-inner img {
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel-inner img, .card-img-top {
+  aspect-ratio: 16/9;
+}
+
+.card {
+  margin-bottom: 1.5rem;
+  background-color: #333;
+  border: 2px solid #ffcc00;
+  border-radius: 0;
+}
+
+.card-img-top {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Estilos para el footer */
 .footer {
-  background-color: #f7f7f7; 
-  padding: 10px; 
-  text-align: center;
-  border-top: 1px solid #cfcfcf;
+  background-color: #ffcc00;
+  color: #000;
+  padding: 20px 0;
 }
 
-.content {
-  flex: 1;
+/* Estilos para el texto del footer */
+.footer h2 {
+  font-size: 1.2rem; /* Ajusta el tamaño del texto */
 }
 
-
-h5{
-  color: rgb(17, 0, 255);
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: end;
+/* Newsletter */
+.newsletter {
+  text-align: left;
 }
 
-h2{
-  font-weight: 700;
-  text-transform: uppercase;
-  color: rgb(17, 0, 255);
+/* Redes sociales */
+.social-media {
+  text-align: right;
 }
 
-
-form {
-  width: 50%;
-  margin: 40px auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.social-media ul {
+  list-style: none;
+  padding: 0;
 }
 
-label {
-  display: block;
-  margin-bottom: 10px;
-  font-weight: 600;
+.social-media ul li {
+  display: inline;
+  margin: 0 10px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea{
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.social-media ul li a {
+  color: #000;
+  font-size: 50px; /* Aumenta el tamaño del icono */
+  text-decoration: none;
 }
 
-button[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: rgb(71, 68, 255);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button[type="submit"]:hover {
-    background-color: #1100ff;
+.social-media ul li a:hover {
+  color: #fff;
 }
