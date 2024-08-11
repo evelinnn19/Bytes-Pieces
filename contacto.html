@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+  <script src="./js/contacto.js" defer></script>
 </head>
 
 <body>
@@ -72,29 +73,26 @@
         </div>
     </div>
     <section class="form-section">
-        <form id="contact-form" action="#" method="POST">
-            <label for="nombre">Nombre y Apellido:</label>
-            <input type="text" id="nombre" placeholder="Acá tu nombre" name="nombre" required><br><br>
+        <form id="contactForm" action="#" method="POST">
+            <label for="contactFormName">Nombre y Apellido:</label>
+            <input type="text" id="contactFormName" placeholder="Acá tu nombre" name="contactFormName" required><br><br>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Tu email válido" name="email" autocomplete="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br><br>
+            <label for="contactFormEmail">Email:</label>
+            <input type="email" id="contactFormEmail" placeholder="Tu email válido" name="contactFormEmail" autocomplete="email" required><br><br>
 
-            <label for="direccion">Dirección:</label>
-            <input type="text" id="direccion" placeholder="Escribe tu dirección física" name="direccion" required><br><br>
+            <label for="contactFormPhone">Teléfono Celular:</label>
+            <input type="tel" id="contactFormPhone" placeholder="Escribe el código de área y número de celular (sin 0 ni 15)" name="contactFormPhone" required><br><br>
 
-            <label for="telefono">Teléfono Celular:</label>
-            <input type="tel" id="telefono" placeholder="Escribe el código de área y número de celular (sin 0 ni 15)" name="telefono" required pattern="[0-9]{10,13}"><br><br>
-
-            <label for="mensaje">Mensaje:</label><br>
-            <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>       
+            <label for="contactFormMessage">Mensaje:</label><br>
+            <textarea id="contactFormMessage" name="contactFormMessage" rows="5" required></textarea><br><br>       
 
             <div class="checkbox-container">
-                <input type="checkbox" name="checkbox" id="checkbox" required>
-                <label for="checkbox" class="checkbox-label">Acepto los términos y condiciones de Bytes & Pieces</label>
+                <input type="checkbox" name="contactFormCheckbox" id="contactFormCheckbox" required>
+                <label for="contactFormCheckbox" class="checkbox-label">Acepto los términos y condiciones de Bytes & Pieces</label>
             </div>
             <br><br>
             
-            <input type="submit" value="Enviar">            
+            <input type="submit" id="contactFormSubmit" value="Enviar">            
 
         </form>
     </section>
